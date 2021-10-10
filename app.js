@@ -6,6 +6,8 @@ const mongo= require("./shared/mongo");
 const studentRoutes=require("./Routes/students.routes");
 const mentorRoutes=require("./Routes/mentors.routes");
 
+app.use(cors())
+
 (async()=>{
 
 try 
@@ -13,7 +15,7 @@ try
 
     await mongo.connect()
 
-    app.use(cors())
+    
 
     app.use(express.json())
 
