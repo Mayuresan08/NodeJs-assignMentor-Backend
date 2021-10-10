@@ -29,7 +29,5 @@ app.listen(port,()=>{
 
 }
 catch(err)
-{
-console.log("ERROR in Connecting to DB",err)
-}
+{console.log("ERROR in Connecting to DB",err)}
 })();
