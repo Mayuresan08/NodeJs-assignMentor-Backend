@@ -7,13 +7,13 @@ const studentRoutes=require("./Routes/students.routes");
 const mentorRoutes=require("./Routes/mentors.routes");
 
 
-
+app.use(cors());
 (async()=>{
 
 try 
 {
-    app.use(cors())
-    
+   
+
     await mongo.connect()
 
     app.use(express.json())
